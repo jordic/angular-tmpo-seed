@@ -1,4 +1,5 @@
 
+http://tmpo.io
 
 ## Angular TMPO seed
 
@@ -32,5 +33,16 @@ Is also posbile to use gobindata to ship the generated asses on the main binary,
 but also, if you will deploy using docker, is more easy to just copy, the 
 dest folder to your container, and serve it from go backend.
 
+## Features
 
-http://tmpo.io
+- Bower dependencies are automatically parsed, and injected on index.html
+- App javascripts are injected on the app, it uses aungular-filesort for
+  handling file orders
+- Templates are parsed, and included as javascript files with, 
+	angular-templatecache
+- Unit tests are ready and setup. A task for gulp is created to run them 
+``` gulp test ``` or to do TDD ```gulp test:auto```
+- SCSS files are builded and autoprefixed. Is a good idea to include burbon mixins.
+- During development all files are injected to index.html (You will not need sourcemaps, because they are injected as is). On release/build files are minified, and versioned.
+
+
