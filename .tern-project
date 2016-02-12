@@ -1,0 +1,13 @@
+{
+  "ecmaVersion": 5,
+  "libs": [
+  ],
+  "loadEagerly": [
+    "src/app/components/**/*.js",
+    "src/app/**/*.js"
+  ],
+  "plugins": {
+    "angular": {},
+		"jasmine": {}
+  }
+}

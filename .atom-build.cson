@@ -1,0 +1,11 @@
+{
+  "cmd": "gulp",
+  "name": "Gulp Test",
+  "args": [ "test"],
+  "sh": true,
+  "cwd": "./",
+  "errorMatch": [
+    ".*at (?<file>[\\/0-9a-zA-Z\\._]+):(?<line>\\d+)",
+  ],
+  "keymap": "ctrl-alt-t",
+}
