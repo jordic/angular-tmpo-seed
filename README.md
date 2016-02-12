@@ -1,6 +1,6 @@
 
 
-## Angular seed
+## Angular TMPO seed
 
 This is our angular seed, with our gulp tasks.
 
@@ -18,12 +18,19 @@ During development, you can run:
 
 ```gulp watch```
 
-and point your golang backend to /tmp
+and point your golang backend to serve static files on /tmp
 
 When all is fine, you can build your project with:
 
 ```gulp dist```
 
-
 If you don't want to use  golang backend... you can also serve the project
 with gulp serve.
+
+
+Is also posbile to use gobindata to ship the generated asses on the main binary, 
+but also, if you will deploy using docker, is more easy to just copy, the 
+dest folder to your container, and serve it from go backend.
+
+
+http://tmpo.io
