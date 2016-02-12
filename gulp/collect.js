@@ -12,12 +12,17 @@ var $ = require('gulp-load-plugins')({
 
 var conf = require('./conf');
 
-// Collects node_modules and copies them to dev
+// Collects bower_components and copies them to dev
 gulp.task('collect:vendor', function() {
   var wire = require('wiredep');
   var js = wire().js;
   var css = wire().css;
-  var files = js.concat(css);
+	var files;
+	if (css) {
+		files = js.concat(css);
+	} else {
+		files = js.concat();
+	}
   return gulp.src(files, {
       base: "."
     })
