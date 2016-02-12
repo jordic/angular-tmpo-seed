@@ -45,4 +45,10 @@ dest folder to your container, and serve it from go backend.
 - SCSS files are builded and autoprefixed. Is a good idea to include burbon mixins.
 - During development all files are injected to index.html (You will not need sourcemaps, because they are injected as is). On release/build files are minified, and versioned.
 
+## Installation
 
+```git clone --depth=1 --branch=master git@github.com:jordic/angular-tmpo-seed.git```
+
+After this, you can edit the 'mnt' module, if you one to customize it. Also it would be a good idea to update project name, version, release at package.json, and bower.json
+
+There are to main options for bower dependencies, We prefer to vendor them and include it on the main repo. BTW, if not, you should use ```bower install --save dependency```
